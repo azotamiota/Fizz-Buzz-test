@@ -1,7 +1,4 @@
-// const test = require('jest')
 const each = require('jest-each').default
-// const { describe } = require('yargs')
-// const { exportAllDeclaration } = require('@babel/types')
 const fizzBuzz = require('./fizzBuzz.js')
 
 describe('It will show a number, Fizz, Buzz or FizzBuzz', () => {
@@ -20,7 +17,8 @@ describe('It will show a number, Fizz, Buzz or FizzBuzz', () => {
     describe('It handles normal input successfully', () => {
         each(
             [
-                [5, [1, 2, 'Fizz', 4, 'Buzz']]
+                [5, [1, 2, 'Fizz', 4, 'Buzz']],
+                [16, [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16]]
             ]
         ).test("", (num, expected) => {
             expect(fizzBuzz(num)).toEqual(expected)
