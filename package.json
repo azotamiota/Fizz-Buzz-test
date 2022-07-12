@@ -1,0 +1,25 @@
+{
+  "name": "fizz-buzz-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fizzBuzz.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azotamiota/Fizz-Buzz-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azotamiota/Fizz-Buzz-test/issues"
+  },
+  "homepage": "https://github.com/azotamiota/Fizz-Buzz-test#readme",
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "jest-each": "^28.1.1"
+  }
+}
