@@ -16,4 +16,13 @@ describe('It will show number Fizz, Buzz or FizzBuzz', () => {
             }).toThrow('Error: please enter a positive integer')
         })
     })
+    describe('It handles normal input successfully', () => {
+        each(
+            [
+                [5, [1, 2, 'Fizz', 3, 4, 'Buzz']]
+            ]
+        ).test("", (num, expected) => {
+            expect(fizzBuzz(num)).toBe(expected)
+        })
+    })
 })
